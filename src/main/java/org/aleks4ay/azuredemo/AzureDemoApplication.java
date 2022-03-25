@@ -15,6 +15,11 @@ public class AzureDemoApplication {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello Anatol from Aleksei using Azure site!" + System.lineSeparator() + "<br>";
+        return "Hello Anatol from Aleksei using Azure site!";
+    }
+
+    @GetMapping("/")
+    public String helloTwo() {
+        return "Hello Anatol from Aleksei using Azure site!" + System.lineSeparator() + "И усе иже с ним!";
     }
 }
